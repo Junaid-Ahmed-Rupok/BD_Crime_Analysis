@@ -31,6 +31,7 @@ This project uses **XGBoost** and **AdaBoost** classifiers to achieve high accur
 
 ## **Folder Structure**
 
+```
 crime-classification/
 │
 ├── cleaning.py
@@ -49,45 +50,56 @@ crime-classification/
     ├── confusion_matrix.png
     ├── feature_importance.png
     └── banner_screenshot.png
-
+```
 ## **Installation**
 
-1. Clone the repository:
+### 1. Clone the repository:
 
 ```bash
 git clone https://github.com/yourusername/crime-classification.git
 cd crime-classification
+```
+### 2. Make the virtual environment
 
+```bash
 python -m venv venv
 source venv/bin/activate      # Linux/Mac
 venv\Scripts\activate         # Windows
+```
 
+Install the requirements.
+
+```bash
 pip install -r requirements.txt
+```
 
-Data Description
+## **Data Description**
 
 The dataset contains numeric and categorical features relevant to crime analysis.
 The target column is crime with six classes:
 
-Crime Type	Label
-Murder	    0
-Rape	    1
-Assault	    2
-Body Found	3
-Kidnap	    4
-Robbery	    5
+| Crime Type | Label |
+|------------|-------|
+| Murder     |     0 |
+| Rape       |     1 |
+| Assault    |     2 |
+| Body Found |     3 |
+| Kidnap     |     4 |
+| Robbery    |     5 |
 
-Note: The project currently uses a sample dataset for demonstration, but all scripts are compatible with real crime datasets.
 
-Usage
+_Note_: The project currently uses <b>a sample dataset for demonstration</b>, but all scripts are compatible with real crime datasets.
 
+## **Usage**
+
+``` bash
 python cleaning.py
 python training.py
 streamlit run crime_dashboard.py
 python app.py
+```
 
-
-Flask App Screenshot:
+## **Flask App Screenshot:**
 
 ![Flask App Screenshot](assets/flask_app.png)
 ![Confusion Matrix](assets/confusion_matrix.png)
