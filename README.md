@@ -95,6 +95,9 @@ Flask App Screenshot:
 ![Project Banner](assets/banner_screenshot.png)
 ![Learning Curve](assets/learning_curve.png)
 ![Output](assets/output.png)
+
+Dashboard Screenshots
+
 ![Dashboard Screenshot](assets/dashboard_1.png)
 ![Dashboard Screenshot](assets/dashboard_2.png)
 ![Dashboard Screenshot](assets/dashboard_3.png)
