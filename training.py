@@ -134,6 +134,8 @@ for i, (name, value) in enumerate(feature_importance.items()):
     bx[i].set_ylabel('Feature Importance')
     bx[i].set_title(f'{name} feature importance')
     bx[i].bar(value.index, value.values, color='green')
+    bx[i].set_xticks(range(len(value.index)))  # set tick positions
+    bx[i].set_xticklabels(value.index, rotation=45, ha='right')  # rotate labels
     bx[i].grid(True)
 
 plt.tight_layout()
